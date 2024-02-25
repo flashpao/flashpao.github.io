@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working Destination</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: black;
+    }
+    canvas {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    #yearSlider {
+      width: 30%;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1 style="color:white; text-align: center;"> Analyse of identifying ideal workplace</h1>
+    <div>
+    <h2 style="color:white; text-align: center;"> Description of the problem</h2>
+    <div style="width:fit-content; height:fit-content; overflow: auto;margin: auto;">
+    <p style="color:white; text-align:left; font-size: 25px ;"> 
+      The problem is to identify the ideal workplace for the user, especially for the just graduated students.<br>
+      In order to solve this problem, we need to consider lots of factors. The factors of the places of different years can be found with the slider.<br>
+      The layout is separated into 2 parts: <br>
+      The first part is the visualisation of the average income of different places.<br>
+      The second part is more details about the top 15 countries having the most income per capital.<br>
+      <br>
+      More information about the second part: <br>
+      Axis: y is the income per capital, x is the employment rate. The size of the circle is the GDP, the color is the consumption income ratio.<br> 
+    
+    </p>
+    </div>
+    </div>
+    <div style="text-align:center; color:white; margin-top:20px;">
+      <label for="yearSlider">Year:</label>
+      <input type="range" id="yearSlider" min="1950" max="2021" value="2002">
+      <span id="yearDisplay">2002</span>
+    </div>
+    <script src="p5.js"></script> 
+    <!-- <script src="../addons/p5.sound.js"></script> -->
+    <script src="sketch.js"></script>
+  </main>
+</body>
+
+</html>
+
